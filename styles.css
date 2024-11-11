@@ -25,6 +25,7 @@ body{
     background-size: cover;
     position: absolute;
     z-index: -1;
+    width: 100vw;
 }
 
 .huddle-img-2{
