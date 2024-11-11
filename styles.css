@@ -1,0 +1,175 @@
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--Violet);
+    color: white;
+    position: relative;
+}
+
+.huddle-page{
+    padding: 30px 30px;
+}
+
+.huddle-img{
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.huddle-img-2{
+    display: none;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.huddle-page .header{
+
+}
+
+.huddle-page .header img{
+    width: 120px;
+}
+
+.main-content{
+    margin-top: 40px;
+    font-family: "Open Sans", serif;
+    text-align: center;
+}
+
+.main-content img{
+    width: 100%;
+}
+
+.main-content .text-content{
+    margin-top: 40px;
+}
+
+.main-content .text-content h2{
+    font-size: 1.5rem;
+}
+
+.main-content .text-content p{
+    
+}
+
+.main-content .text-content .register-button{
+    border-radius: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 220px;
+    color: var(--Violet);
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-content .text-content .register-button:hover{
+    background-color: var(--Soft-Magenta);
+    color: white;
+    transition: 0.2s;
+}
+
+.social-links{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-links a{
+    width: 35px !important;
+    height: 35px !important;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    cursor: pointer;
+}
+
+.social-links a:hover{
+    color: var(--Soft-Magenta);
+    border: 1px solid var(--Soft-Magenta);
+    transition: 0.2s;
+}
+
+.social-links a i{
+
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .huddle-img{
+        display: none;
+    }
+
+    .huddle-img-2{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+    }
+    .huddle-page{
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .huddle-page .header img{
+        width: 150px;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+        column-gap: 30px;
+        margin-top: 80px;
+    }
+
+    .main-content .text-content h2{
+        margin-top: 0;
+        font-size: 2.7rem;
+    }
+    
+    .main-content .text-content p{
+        font-size: 1.2rem;
+    }
+
+    .main-content img{
+        width: 50%;
+    }
+
+    .main-content .text-content{
+        width: 50%;
+    }
+
+    .social-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    .social-links{
+        margin-top: 30px;
+    }
+}
